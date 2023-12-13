@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            background-color: rgb(40, 40, 101);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 130px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            opacity: 0; /* Initially set the opacity to 0 */
+            animation: fadeInAnimation 1.5s ease-in forwards; /* Apply fade-in animation */
+        }
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .mydetails {
+            text-align: left;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            text-align: left;
+        }
+        .social-links a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        .social-links img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .profile-photo {
+            width: 330px;
+            height: auto;
+        }
+        .profile-photo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="mydetails">
+            Contact me
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/satwik.bachu?mibextid=ZbWKwL">
+                <img src="facebook.png" alt="Facebook icon">Like me on Facebook
+            </a>
+            <a href="https://instagram.com/s.a.t.w.i.k_?igshid=YzAwZjE1ZTI0Zg==">
+                <img src="instagram.png" alt="Instagram icon">Follow me on Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/sai-satwik777?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src="linkedin.png" alt="LinkedIn icon">Connect with me on LinkedIn
+            </a>
+        </div>
+    </div>
+    <div>
+        <img src="contactme.jpg" alt="Your Photo" class="profile-photo">
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.body.style.opacity = 1; // Ensure the opacity is set to 1 after load
+        };
+    </script>
+</body>
+</html>
